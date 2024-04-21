@@ -63,9 +63,10 @@ def pipeline(comments, model_path):
     return prediction_df
 
 def main():
-    st.header("Movie Comment Sentiment Analysis🍅")
-    st.title("Know Your Audience From This Place.")
-    st.write("With the help of BERT LLM, you can predict the sentiment of a movie reviews. By collecting comments from Rotten Tomatoes Audiences, we can see how people react to the movies and predict the sentiment of the comments.")
+    st.set_page_config("Movie Comment Sentiment Analysis🍅")
+    st.header("Know Your Audience From This Place.")
+    st.write("With the help of BERT LLM, you can predict the sentiment of movie reviews+. By collecting comments from Rotten Tomatoes Audiences, we can see how people react to the movies and predict the sentiment of the comments.")
+    st.write("In the future, we will upgrade this website to make you throw in a Reddit link and use it to predict the score for this movie from audiences!")
 
     user_input = st.text_input("Test the comment:","You could HEAR the disappointment from the audience I was with when that â€œTo Be Continuedâ€ title card showed up lmao. But besides that, yeah this was a dang fine sequel. Better than most I dare say. Seeing aged-up Peni Parker in her upgraded mech for the first time almost made me tear up a bit.Oh yeah and Hailee Steinfeld deserves an Oscar for her performance here, all of the scenes when she's paired up with her dad were beautifully executed. Easily the best parts of the film for me personally.")
     user_input = [user_input]
