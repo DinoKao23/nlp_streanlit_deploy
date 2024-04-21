@@ -63,7 +63,7 @@ def pipeline(comments, model_path):
     return prediction_df
 
 def main():
-    st.set_page_config("Movie Comment Sentiment Analysis🍅")
+    st.set_page_config("Review Analysis🍅")
     st.header("Know Your Audience From This Place.")
     st.write("With the help of BERT LLM, you can predict the sentiment of movie reviews+. By collecting comments from Rotten Tomatoes Audiences, we can see how people react to the movies and predict the sentiment of the comments.")
     st.write("In the future, we will upgrade this website to make you throw in a Reddit link and use it to predict the score for this movie from audiences!")
