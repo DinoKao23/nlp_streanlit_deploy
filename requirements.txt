@@ -5,6 +5,5 @@ streamlit==1.31.0
 regex
 torch
 transformers
-regex
 langdetect
 nltk
