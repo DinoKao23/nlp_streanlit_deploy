@@ -2,6 +2,7 @@ import regex as re
 from langdetect import detect
 from nltk.corpus import stopwords
 
+import nltk
 import pandas as pd
 import numpy as np
 import torch
@@ -9,6 +10,8 @@ import random
 from transformers import DistilBertModel, DistilBertTokenizer, BertModel, BertTokenizer
 import joblib
 import streamlit as st
+
+nltk.download('stopwords')
 
 # set seed
 seed = 0
